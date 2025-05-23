@@ -1,0 +1,15 @@
+=>  connect with container with CLI
+
+docker exec -it clickhouse bash
+
+=> after go inside SQL 
+
+clickhouse-client --user default --password password
+
+=> directly go inside SQL
+
+docker exec -it clickhouse clickhouse-client --user default --password password 
+
+=> run my local sql file inside container
+
+docker exec -i clickhouse clickhouse-client --user default --password password < sql/00_create_database.sql

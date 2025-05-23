@@ -1,0 +1,3 @@
+=> remove data and stop container
+
+docker-compose down -v
